@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zensho-Algo（ぜんしょアルゴ）
 
-## Getting Started
+**全商情報処理検定 プログラミング部門 — アルゴリズム完全攻略トレーナー**
 
-First, run the development server:
+本番URL: <https://zensho-algo.vercel.app>
 
+## 目的
+擬似言語のアルゴリズムを「暗記」ではなく **「動かして理解する」** ための学習ツール。
+プログラムの実行を1ステップずつ追い、変数がどう変化するかを目で見て理解する。
+
+> **設計思想 — 自己デザイン**: 答えを与えるのではなく、学習者が自ら *試す・トレースする・気づく* プロセスを支援する。「自ら主体的に学ぶ学習者」を育てることを意図して設計。
+
+## 主な機能
+- **擬似言語エディタ** — 検定形式の擬似言語コードを入力／編集
+- **変数トレース** — 実行に合わせて各変数の値をリアルタイム表示
+- **ステップ実行 / アニメーション** — 1行ずつ、または自動再生で処理の流れを可視化
+- **フローチャート変換** — コードの構造を図で把握
+- 検定レベル別の例題・練習問題
+
+## 技術スタック
+- Next.js (App Router) / TypeScript
+- Tailwind CSS
+- Vercel (ホスティング)
+
+## ローカル開発
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev   # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 位置づけ
+学習プラットフォーム構想 **ISLOS（IT-Skills Learning OS）** の一部。情報I・ITパスポート・基本情報・全商検定などの学習を、ソフトウェアで支えることを目指す取り組みの一つ。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*※ 本リポジトリは ISLOS モノレポから独立したアプリ単体のクリーン版です。*
